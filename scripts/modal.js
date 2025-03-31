@@ -16,17 +16,17 @@ const imgData = {
 const imageObject = {
   tShirts: [
     {
-      src: "/assets/tshirt.png",
+      src: "./assets/tshirt.png",
       alt: "Blue T-shirt",
       class: "first-image bg-gray-300 cursor-pointer",
     },
     {
-      src: "/assets/blueTshirt.png",
+      src: "./assets/blueTshirt.png",
       alt: "Blue T-shirt",
       class: "second-image bg-gray-300 cursor-pointer",
     },
     {
-      src: "/assets/blackTshirt.png",
+      src: "./assets/blackTshirt.png",
       alt: "Black T-shirt",
       class: "third-image bg-gray-300 cursor-pointer",
     },
@@ -103,6 +103,7 @@ function getCardData() {
     element.addEventListener("click", () => {
       const imageSrc = element.querySelector("img").src;
       imgData.image = new URL(imageSrc).pathname;
+      console.log(imgData.image);
       imgData.title = element.querySelector(".card-title").textContent;
       imgData.description =
         element.querySelector(".card-description").textContent;
@@ -178,13 +179,6 @@ function showModal() {
     </div>`;
 
   mainContainer.append(createModal);
-
-  // const btn = document.querySelector(".add-product");
-  // if (btn) {
-  //   addItemToCart(btn);
-  // } else {
-  //   console.error("Eroare: Butonul add-product nu a fost găsit!");
-  // }
 }
 
 export default getCardData;
