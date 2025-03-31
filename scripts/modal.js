@@ -103,7 +103,6 @@ function getCardData() {
     element.addEventListener("click", () => {
       const imageSrc = element.querySelector("img").src;
       imgData.image = new URL(imageSrc).pathname;
-      console.log(imgData.image);
       imgData.title = element.querySelector(".card-title").textContent;
       imgData.description =
         element.querySelector(".card-description").textContent;
