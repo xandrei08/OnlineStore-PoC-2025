@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "category": "jeans",
+    "image": "./assets/jeans.png",
+    "title": "Jeans",
+    "description": "Good quality last forever",
+    "price": "120",
+    "soldBy": "CallMe"
+  },
+  {
+    "id": "2",
+    "category": "tshirt",
+    "image": "./assets/tshirt.png",
+    "title": "T-Shirt",
+    "description": "Best cotton quality",
+    "price": "9.99",
+    "soldBy": "CallMe"
+  },
+  {
+    "id": "3",
+    "category": "tshirt",
+    "image": "./assets/tshirt.png",
+    "title": "T-shirt",
+    "description": "Good quality, less quantity",
+    "price": "6.55",
+    "soldBy": "CallMe"
+  },
+  {
+    "id": "4",
+    "category": "jacket",
+    "image": "./assets/jacket.png",
+    "title": "Jacket",
+    "description": "Waterproof Jacket good quality",
+    "price": "89.99",
+    "soldBy": "HireMe"
+  },
+  {
+    "id": "5",
+    "category": "jeans",
+    "image": "./assets/jeans.png",
+    "title": "Jeans",
+    "description": "High quality, good for skying",
+    "price": "59.99",
+    "soldBy": "TrustMe"
+  },
+  {
+    "id": "6",
+    "category": "jacket",
+    "image": "./assets/jacket.png",
+    "title": "Jacket",
+    "description": "One time wear jacket",
+    "price": "10.99",
+    "soldBy": "TrustMe"
+  },
+  {
+    "id": "7",
+    "category": "jacket",
+    "image": "./assets/jacket.png",
+    "title": "Jacket",
+    "description": "Waterproof Jacket good quality",
+    "price": "89.99",
+    "soldBy": "HireMe"
+  },
+  {
+    "id": "8",
+    "category": "jeans",
+    "image": "./assets/jeans.png",
+    "title": "Jeans",
+    "description": "High quality, good for skying",
+    "price": "59.99",
+    "soldBy": "TrustMe"
+  },
+  {
+    "id": "9",
+    "category": "jacket",
+    "image": "./assets/jacket.png",
+    "title": "Jacket",
+    "description": "One time wear jacket",
+    "price": "10.99",
+    "soldBy": "TrustMe"
+  }
+]

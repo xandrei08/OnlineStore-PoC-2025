@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Online - Proof of concept</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/2725206ba1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="flex flex-col w-full py-5 px-5 sm:px-10 xl:px-24 gap-8">
+      <nav class="flex flex-row justify-end relative">
+        <i
+          class="fa-solid fa-bag-shopping text-5xl text-amber-500 cursor-pointer"
+        ></i>
+        <p
+          class="count-items text-green-600 animate-pulse text-2xl font-bold"
+        ></p>
+      </nav>
+      <div
+        class="basket-items opacity-0 invisible flex flex-col w-md max-w-md absolute top-[4rem] sm:right-[2vh] xl:right-[5vw] bg-gray-50 py-2 border-2 border-amber-500"
+      >
+        <div
+          class="total flex flex-row w-[100%] justify-end font-bold gap-2 pr-8"
+        >
+          <p class="total font-bold">Total:</p>
+          <span class="total-price text-green-500 block"></span>
+        </div>
+      </div>
+      <section class="main-container flex flex-row w-full gap-2">
+        <div
+          class="categories hidden sm:hidden text-xl md:hidden lg:flex flex-col flex-[1]"
+        >
+          <h2 class="text-3xl font-bold gap-6">Categories</h2>
+          <div class="border-t-1">
+            <input type="checkbox" class="inputTshirt" value="tshirt" /> T-shirt
+          </div>
+          <div>
+            <input type="checkbox" class="inputJeans" value="jeans" /> Jeans
+          </div>
+          <div class="border-b-1">
+            <input type="checkbox" class="inputJackets" value="jacket" />
+            Jackets
+          </div>
+        </div>
+        <div class="cards flex flex-col flex-[3] items-center gap-6">
+          <input
+            type="text"
+            placeholder="Search item"
+            class="search-bar sm:block lg:hidden border-2 border-amber-500 outline-emerald-500"
+          />
+          <h2 class="text-3xl text-center">Be trendy, be fashionable!</h2>
+          <div
+            class="cards-box w-full flex flex-row flex-wrap justify-center"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
