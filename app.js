@@ -1,5 +1,6 @@
 import getCardData from "./scripts/modal.js";
 import { searchItem } from "./scripts/search.js";
+import { subscribe } from "./scripts/susbsribe.js";
 
 export const state = {
   click: false,
@@ -86,6 +87,9 @@ function expandIitems() {
   basket.addEventListener("click", () => {
     basketItems.classList.toggle("opacity-0");
     basketItems.classList.toggle("invisible");
+    setTimeout(() => {
+      subscribe();
+    }, 3000);
   });
 }
 expandIitems();
