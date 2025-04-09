@@ -87,9 +87,6 @@ function expandIitems() {
   basket.addEventListener("click", () => {
     basketItems.classList.toggle("opacity-0");
     basketItems.classList.toggle("invisible");
-    setTimeout(() => {
-      subscribe();
-    }, 3000);
   });
 }
 expandIitems();
@@ -100,3 +97,7 @@ function trackItemsAdded(element) {
   console.log(basketItems.length);
 }
 trackItemsAdded();
+
+setTimeout(() => {
+  subscribe();
+}, 7000);

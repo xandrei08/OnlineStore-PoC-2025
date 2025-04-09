@@ -13,6 +13,7 @@ export function subscribe() {
         <div class="flex flex-row gap-5">
           <input
             type="email"
+            restricted
             class="userEmail border-gray-500 border-1"
             placeholder="Enter Email Address"
           />
@@ -24,12 +25,45 @@ export function subscribe() {
         <button class="close-subscribe-modal absolute top-2 right-2 text-white font-bold bg-red-600 text-2xl px-2 cursor-pointer rounded-2xl" aria-label="Close Modal">&times;</button>
       </div>
   `;
-  closeModal();
+  closeSubscribeModal();
+  getSubEmailData();
 }
 
-function closeModal() {
+function closeSubscribeModal() {
   const closeModal = document.querySelector(".close-subscribe-modal");
   closeModal.addEventListener("click", () => {
     subContainer.innerHTML = "";
   });
+}
+
+function getSubEmailData() {
+  const getUserEmail = document.querySelector(".userEmail");
+  const signUpBtn = document.querySelector(".btn-subscribe");
+  signUpBtn.addEventListener("click", () => {
+    const email = getUserEmail.value.trim();
+    if (email === "") {
+      alert("Please type your email");
+      return;
+    }
+    const emailList = JSON.parse(localStorage.getItem("emails")) || [];
+    if (!emailList.includes(email)) {
+      emailList.push(email);
+      localStorage.setItem("emails", JSON.stringify(emailList));
+      afterMessage();
+    } else {
+      alert("This email is already subsciibed");
+    }
+  });
+}
+
+function afterMessage() {
+  subContainer.innerHTML = `<div
+        class="subscribe-content bg-white border-1 p-8 flex flex-col gap-4 shadow-gray-500/50 shadow-xl relative"
+      >
+       <h2 class="w-full font-bold p-4"> Thank you for your subscription!</h2>
+       <h3 class="w-full font-bold p-4"> Your voucher of 15% discount: SAVE15</h3>
+      </div>`;
+  setTimeout(() => {
+    subContainer.innerHTML = "";
+  }, 3000);
 }
