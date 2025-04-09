@@ -61,7 +61,7 @@ function afterMessage() {
         class="subscribe-content bg-white border-1 p-8 flex flex-col gap-4 shadow-gray-500/50 shadow-xl relative"
       >
        <h2 class="w-full font-bold p-4"> Thank you for your subscription!</h2>
-       <h3 class="w-full font-bold p-4"> Your voucher of 15% discount: SAVE15</h3>
+       <h3 class="w-full font-bold p-4"> Your voucher of 20% discount: SAVE20</h3>
       </div>`;
   setTimeout(() => {
     subContainer.innerHTML = "";
