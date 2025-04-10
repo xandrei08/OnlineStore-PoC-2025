@@ -3,11 +3,11 @@ const subContainer = document.querySelector(".subscribe");
 export function subscribe() {
   subContainer.innerHTML = `
   <div
-        class="subscribe-content w-fit xs:p-2 sm:p-4 md:p-8 xs:mx-5 bg-white border-1  flex flex-col gap-3 shadow-gray-500/50 shadow-xl relative"
+        class="subscribe-content w-fit mx-2 p-4 bg-white border-1  flex flex-col gap-3 shadow-gray-500/50 shadow-xl relative"
       >
-        <h2 class="font-bold">Subscribe & Enjoy</h2>
-        <h3 class="font-bold text-3xl">20% off</h3>
-        <p class="font-bold">
+        <h2 class="font-bold xs:text-sm">Subscribe & Enjoy</h2>
+        <h3 class="font-bold text-3xl xs:text-sm">20% off</h3>
+        <p class="font-bold xs:text-sm">
           Join our email list and be first to know about exiciting sales.
         </p>
         <div class="flex flex-row gap-5">
