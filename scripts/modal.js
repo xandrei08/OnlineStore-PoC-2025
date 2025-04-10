@@ -2,7 +2,7 @@ import { createImages } from "./utility.js";
 import switchImage from "./carrousel.js";
 import { addItemToCart } from "./addItem.js";
 
-// Modal main data.
+// Modal main body
 const imgData = {
   image: "",
   title: "",
@@ -12,7 +12,7 @@ const imgData = {
   bannerImage: "./assets/banner.png",
 };
 
-//Images object to get for Modal
+//Object of Images to show up while modal is open
 const imageObject = {
   tShirts: [
     {
@@ -84,7 +84,7 @@ function getImages(target) {
       createImages(element.src, element.alt, element.class, modalmages);
     });
   } else {
-    console.log("it doesnt'work");
+    alert("it doesnt'work");
   }
 }
 //function to close modal

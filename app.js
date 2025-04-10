@@ -29,9 +29,7 @@ const cardsData = async () => {
   getCardData();
   searchItem();
 };
-
 cardsData();
-
 // Function to create cards
 function createCard(image, title, description, price, seller, category) {
   const mainContainer = document.querySelector(".cards-box");
@@ -58,7 +56,7 @@ function createCard(image, title, description, price, seller, category) {
   mainContainer.appendChild(addCard);
 }
 
-// Filter to filter cards based on their category
+// Filter to show cards based on their category
 function filterCards() {
   const inputs = Array.from(document.querySelectorAll("input"));
   const getCards = Array.from(document.querySelectorAll(".cards-body"));
@@ -90,14 +88,7 @@ function expandIitems() {
   });
 }
 expandIitems();
-
-function trackItemsAdded(element) {
-  const itemsIn = document.querySelector(".count-items");
-  const basketItems = Array.from(document.querySelector(".basket-items"));
-  console.log(basketItems.length);
-}
-trackItemsAdded();
-
+// Subscribe newsletter pop-up
 setTimeout(() => {
   subscribe();
 }, 7000);

@@ -3,7 +3,7 @@ const subContainer = document.querySelector(".subscribe");
 export function subscribe() {
   subContainer.innerHTML = `
   <div
-        class="subscribe-content bg-white border-1 p-8 flex flex-col gap-3 shadow-gray-500/50 shadow-xl relative"
+        class="subscribe-content w-fit xs:mx-5 bg-white border-1 p-8 flex flex-col gap-3 shadow-gray-500/50 shadow-xl relative"
       >
         <h2 class="font-bold">Subscribe & Enjoy</h2>
         <h3 class="font-bold text-3xl">20% off</h3>
@@ -49,14 +49,14 @@ function getSubEmailData() {
     if (!emailList.includes(email)) {
       emailList.push(email);
       localStorage.setItem("emails", JSON.stringify(emailList));
-      afterMessage();
+      subCompleted();
     } else {
       alert("This email is already subsciibed");
     }
   });
 }
 
-function afterMessage() {
+function subCompleted() {
   subContainer.innerHTML = `<div
         class="subscribe-content bg-white border-1 p-8 flex flex-col gap-4 shadow-gray-500/50 shadow-xl relative"
       >

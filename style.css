@@ -1,4 +1,5 @@
 @import "tailwindcss";
-/* .card-modal {
-  display: none;
-} */
+
+@theme {
+  --breakpoint-xs: 20rem;
+}
