@@ -542,6 +542,11 @@
       margin-inline: calc(var(--spacing) * 5);
     }
   }
+  .xs\:w-fit {
+    @media (width >= 20rem) {
+      width: fit-content;
+    }
+  }
   .xs\:bg-amber-500 {
     @media (width >= 20rem) {
       background-color: var(--color-amber-500);
