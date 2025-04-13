@@ -1,10 +1,13 @@
 import getCardData from "./scripts/modal.js";
 import { searchItem } from "./scripts/search.js";
+import { toggleFooter } from "./scripts/footer.js";
 import { subscribe } from "./scripts/susbsribe.js";
 
 export const state = {
   click: false,
 };
+
+toggleFooter();
 
 // Fetch Json data.
 async function fetchCardsData() {
