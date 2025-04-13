@@ -47,7 +47,7 @@ function createCard(image, title, description, price, seller, category) {
   addCard.setAttribute("data-category", category);
   addCard.innerHTML = `
               <div class="card">
-                <img src="${image}" alt="clothes images" class="card-img hover:bg-amber-600 "/>
+                <img src="${image}" alt="clothes images" class="card-img hover:animate-zoomImage "/>
                 <div class="card-body flex flex-col items-center gap-1">
                   <h3 class="card-title text-2xl font-bold border-b-1">${title}</h3>
                   <p class="card-description text-xl font-semibold">${description}</p>
