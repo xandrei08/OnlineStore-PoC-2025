@@ -3,12 +3,24 @@
 @theme {
   --breakpoint-xs: 20rem;
   --animate-zoomImage: zoomImage 0.5s ease-in-out forwards;
+  --animate-dropdown: dropDown 0.2s linear forwards;
   @keyframes zoomImage {
     from {
       transform: scale(1);
     }
     to {
       transform: scale(1.02);
+    }
+  }
+
+  @keyframes dropDown {
+    from {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }
