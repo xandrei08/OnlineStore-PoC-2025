@@ -3,6 +3,14 @@ import { searchItem } from "./scripts/search.js";
 import { toggleFooter } from "./scripts/footer.js";
 import { subscribe } from "./scripts/susbsribe.js";
 
+window.addEventListener("load", () => {
+  const spinnerDiv = document.querySelector(".spinner");
+  if (!spinnerDiv) return;
+  setTimeout(() => {
+    spinnerDiv.remove();
+  }, 1000);
+});
+
 export const state = {
   click: false,
 };
