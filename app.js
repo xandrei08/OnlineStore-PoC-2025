@@ -3,12 +3,14 @@ import { searchItem } from "./scripts/search.js";
 import { toggleFooter } from "./scripts/footer.js";
 import { subscribe } from "./scripts/susbsribe.js";
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+  document.body.classList.add("overflow-hidden");
   const spinnerDiv = document.querySelector(".spinner");
-  if (!spinnerDiv) return;
+  await cardsData();
   setTimeout(() => {
-    spinnerDiv.remove();
-  }, 1000);
+    spinnerDiv?.remove();
+    document.body.classList.remove("overflow-hidden");
+  }, 500);
 });
 
 export const state = {
