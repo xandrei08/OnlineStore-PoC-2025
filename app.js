@@ -4,7 +4,6 @@ import { toggleFooter } from "./scripts/footer.js";
 import { subscribe } from "./scripts/susbsribe.js";
 
 window.addEventListener("load", async () => {
-  document.body.classList.add("overflow-hidden");
   const spinnerDiv = document.querySelector(".spinner");
   await cardsData();
   setTimeout(() => {
@@ -42,7 +41,7 @@ const cardsData = async () => {
   getCardData();
   searchItem();
 };
-cardsData();
+
 // Function to create cards
 function createCard(image, title, description, price, seller, category) {
   const mainContainer = document.querySelector(".cards-box");
