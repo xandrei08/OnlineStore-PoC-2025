@@ -132,12 +132,13 @@ function showModal() {
     "fixed",
     "left-0",
     "top-0",
-    "backdrop-blur-sm"
+    "backdrop-blur-sm",
+    "z-10"
   );
 
   createModal.innerHTML = `
  <div
-      class="card-modal flex flex-row justify-center text-center w-screen h-screen fixed left-0 top-0 backdrop-blur-sm items-center"
+      class="card-modal z-10 flex flex-row justify-center text-center w-screen h-screen fixed left-0 top-0 backdrop-blur-sm items-center"
     >
       <div
         class="modal flex flex-row bg-white w-fit absolute top-[5vh] rounded-4xl border-1 border-amber-500 py-4"

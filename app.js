@@ -41,7 +41,6 @@ const cardsData = async () => {
   getCardData();
   searchItem();
 };
-
 // Function to create cards
 function createCard(image, title, description, price, seller, category) {
   const mainContainer = document.querySelector(".cards-box");
