@@ -1,0 +1,12 @@
+// function targetItemsSelection(item) {
+//   const price = document.querySelector(".price-received");
+//   let currentPrice = Number(price.textContent.split("$").join(" "));
+//   const itemOption = document.querySelectorAll(item);
+//   itemOption.forEach((item) => {
+//     item.addEventListener("change", (e) => {
+//       let newPrice = currentPrice * Number(e.target.value);
+//       price.innerHTML = newPrice.toString();
+//     });
+//   });
+//   return itemOption;
+// }

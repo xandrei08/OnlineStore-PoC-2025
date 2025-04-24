@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop Online - Proof of concept</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <meta
+      name="description"
+      content="Shop online for trendy fashion items. Find T-shirts, Jeans, Jackets and more. Fashionable, trendy, and stylish clothing available for you."
+    />
+    <meta
+      name="keywords"
+      content="online shopping, fashion, t-shirt, jeans, jackets, trendy clothes"
+    />
     <script
       src="https://kit.fontawesome.com/2725206ba1.js"
       crossorigin="anonymous"
@@ -22,13 +30,16 @@
       <nav class="flex flex-row w-full justify-end relative">
         <i
           class="fa-solid fa-bag-shopping text-5xl text-amber-500 cursor-pointer"
+          aria-label="Shopping Cart"
         ></i>
         <p
           class="count-items text-green-600 animate-pulse text-2xl font-bold"
+          aria-live="polite"
         ></p>
       </nav>
       <div
         class="basket-items opacity-0 invisible flex flex-col w-md max-w-md absolute top-[4rem] sm:right-[2vh] xl:right-[5vw] bg-gray-50 py-2 border-2 border-amber-500"
+        role="complementary"
       >
         <div
           class="total flex flex-row w-[100%] justify-end font-bold gap-2 pr-8"
@@ -40,6 +51,7 @@
       <section class="main-container flex flex-row w-full gap-2">
         <div
           class="categories hidden sm:hidden text-xl md:hidden lg:flex flex-col flex-[1]"
+          aria-labelledby="categories-section"
         >
           <h2 class="text-3xl font-bold gap-6">Categories</h2>
           <div class="border-t-1">
@@ -58,10 +70,12 @@
             type="text"
             placeholder="Search item"
             class="search-bar sm:block lg:hidden border-2 border-amber-500 outline-emerald-500"
+            aria-label="Search for products"
           />
           <h2 class="text-3xl text-center">Be trendy, be fashionable!</h2>
           <div
             class="cards-box w-full flex flex-row flex-wrap justify-center"
+            aria-live="polite"
           ></div>
         </div>
       </section>
@@ -84,6 +98,9 @@
         <div class="footer-col-two flex flex-col flex-[3] gap-5">
           <div
             class="dropdown flex flex-col w-full bg-gray-100 p-4 gap-4 rounded-md shadow-gray-300 shadow-md cursor-pointer"
+            role="button"
+            aria-expanded="false"
+            aria-controls="faq1"
           >
             <div class="dropdown-hidden flex flex-row justify-between w-full">
               <p class="text-xl font-bold">FAQ - Lorem Ipsum</p>

@@ -43,6 +43,7 @@ export function addItemToCart() {
     basketContainer.insertBefore(newItem, totalContainer);
     totalToPay.textContent = calculatePrice();
     countAllItems(cartTotal.length);
+    changeTheNumberOfItems(".price-received");
   });
 }
 targetItemToRemove();
@@ -86,3 +87,35 @@ function countAllItems(element) {
     itemsIn.textContent = element;
   }
 }
+
+function changeTheNumberOfItems(item) {
+  const targetItemPrice = document.querySelector(item);
+  console.log(targetItemPrice);
+  // targetItemPrice.addEventListener("click", () => {
+  //   console.log("hello it is changed");
+  // });
+}
+
+//Function to target number of items selecter 1-3
+// function targetItemsSelection(item) {
+//   const itemOption = document.querySelector(item);
+//   const price = document.querySelector(".price-received");
+//   let currentPrice = Number(price.textContent.split("$").join(" "));
+//   itemOption.addEventListener("change", (e) => {
+//     let newPrice = currentPrice * Number(e.target.value);
+//     price.innerHTML = newPrice.toString();
+//   });
+//   return itemOption;
+// }
+
+// function changeTheNumberOfItems(item) {
+//   const targetItemPrice = Array.from(document.querySelectorAll(item));
+//   let itemPrice = document.querySelector(".price-received");
+//   let currentPrice = Number(itemPrice.textContent.split("$").join(" "));
+//   targetItemPrice.map((item) =>
+//     item.addEventListener("change", (e) => {
+//       let newPrice = currentPrice * Number(e.target.value);
+//       itemPrice.innerHTML = newPrice.toString();
+//     })
+//   );
+// }
